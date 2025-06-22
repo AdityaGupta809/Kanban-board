@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="l.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="nav" id="navbar" style="border-bottom: .5px solid ;">
+
+        <ul id="navbarlogo" >
+            <li>
+                <img src="l.png" alt="logo" width="110px" height="110px"style="margin-top: 18px;">
+            </li>
+
+        </ul>
+
+        <!-- <ul id="navbarlinks">
+            <li>Politics</li>
+            <li>Buisness</li>
+            <li>Sports</li>
+            <li>World</li>
+            <li>Travel</li>
+            <li>Podcast</li>
+            <li>>></li>
+
+
+        </ul>
+
+        <ul id="navbarimgs">
+            <li><img src="user.png" alt="user image" width="30px" height="30px"></li>
+            <li id="search"><img src="search.png" alt="search image" width="40px" height="40px"></li>
+        </ul> -->
+    </nav>
+
+
+
+    <main>
+
+        <div class="maincontainer">
+
+
+            <div class="container" id="todocont">
+
+                <div class="content">
+                    <div class="todono">
+                        <h2><span class="dot" id="tododot"></span> To Do</h2>
+                        <div class="nooftodo">
+                            <p> 8 Total</p>
+                        </div>
+                    </div>
+
+
+                    <button type="button" id="todobutton">+ Add New Task</button>
+
+
+
+                </div>
+
+                <div class=" deactive task-input-form ">
+                    <input type="text" placeholder="Enter task description" class="task-input" name="desc" id="todo" />
+                    <button class="save-task" id="todosavebutton">Save</button>
+                </div>
+
+
+                <div class="cards" id="todocards">
+
+                    <!-- <div class="card" draggable="true">
+                        <div class="card-content">
+
+                            <div class="box">
+                                <div class="icons">
+
+                                    <img src="edit.png" alt="delete" width="25px" height="25px" class="edit-icon" >
+                                    <img src="deleteicon.png" alt="delete" width="22px" height="22px"class="delete-icon">
+                                    <img src="unlock.png" alt="unlock image" width="25px" height="25px" class="lock">
+                                </div>
+
+                                <div class="tag">
+                                    <h4>Importatnt</h4>
+
+
+
+                                </div>
+                            </div>
+                            
+                            <div class="desc">
+                                <div class="editinput deactive">
+                                    <input type="text"  class="editinp" name="desc" />
+                        
+                                </div>
+                                <p >Description of the task goes here.</p>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="container" id="inprogresscont">
+                <div class="content">
+                    <div class="todono">
+                        <h2><span class="dot" id="progdot"></span> Progress</h2>
+
+                        <div class="nooftodo">
+                            <p> 8 Total</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="cards">
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="container" id="donecont">
+
+                <div class="content">
+
+                    <div class="todono">
+                      <h2><span class="dot" id="donedot"></span> Done</h2>
+                   
+
+                        <div class="nooftodo">
+                            <p> 8 Total</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="cards">
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="util.js"></script>
+    <script src="loadtodo.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
